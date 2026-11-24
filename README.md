@@ -45,6 +45,7 @@ Among the 43 Flow A respondents who reported noticing the future discount:
 | Correctly recalled the 1% discount | 18 | 41.86% |
 
 Only 5 of all 99 Flow A respondents (5.05%) both reported noticing the future discount and met both comprehension criteria.
+The responses also revealed specific misunderstandings. Among these 43 respondents, 18 (41.86%) selected the answer that the discount would be given by the website where the next deposit was made, while 15 (34.88%) selected that it would apply to any future payments.
 
 The offer needs clearer communication of the payment method, deadline, and discount amount.
 
@@ -52,7 +53,7 @@ The offer needs clearer communication of the payment method, deadline, and disco
 
 Among the 164 respondents with prior experience of time-limited offers, 56.71% said they would make a special effort to pay within 7 days for this offer, compared with 67.07% who reported acting in time on a previous offer.
 
-The paired difference, calculated before rounding, was −10.37 percentage points (two-sided exact McNemar test, p = 0.0241).
+Stated willingness was 10.37 percentage points lower than recalled past response among the same respondents (two-sided exact McNemar test, p = 0.0241).
 
 Two factors may have made responses to the proposed offer overly optimistic: stated willingness may exceed actual behavior, and an earlier numerical example overstated the monetary saving.
 
@@ -60,17 +61,18 @@ Even under these potentially favorable conditions, willingness remained below th
 
 *The benchmark compares stated intention with recalled behavior under offers that may have had different rewards and conditions. For details of the numerical error and which responses it may have affected, see [Numerical error in Q25](#numerical-error-in-q25).*
 
-## Recommendation
+## Recommendations
 
-Use Flow A as the basis for the next version, but improve the offer explanation:
+Use Flow A as the basis for the next version, but make the existing offer terms more prominent:
 
-- Name the payment method and state explicitly that future payments must use the same method.
-- Make the 7-day deadline prominent. Consider showing the exact expiry date.
-- Present the 1% discount alongside these conditions.
+- Name the payment method and make it explicit that the future discount requires using the same method again.
+- Make the 7-day deadline stand out. Consider showing the exact expiry date.
+- Give the 1% future discount greater visual emphasis alongside its conditions, and strengthen the existing reminder on the confirmation screen.
 
-Then test the revised offer in production to determine whether it increases repeat use of the payment method within 7 days.
+## Next Steps
 
-The main business question is whether the offer generates enough additional repeat payments to justify the discount cost.
+1. Run a production A/B test comparing the current flow without a discount against revised Flow A with clearer offer terms
+2. Measure the impact on repeat use and assess whether the additional economic value justifies the total discount cost
 
 ## Study Design and Data
 
