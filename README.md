@@ -170,6 +170,7 @@ Q25 stated a 1% discount but showed €56.40 due on a €60 payment instead of �
 
 | Material | Description |
 |---|---|
+| [Executive report (PDF)](https://github.com/elena-kolo/payment-flow-experimentation-analysis/blob/main/reports/Payment_flow_prototype_analysis_Report.pdf) | Executive summary of research findings, product recommendations, and the proposed A/B test design |
 | [Data audit notebook](notebooks/01_data_audit_and_hygiene.ipynb) | Data-quality checks, eligibility checks, and cleaned-data export |
 | [Sample balance notebook](notebooks/02_sample_balance.ipynb) | Comparison of participant characteristics and prototype completion across flows |
 | [Prototype analysis notebook](notebooks/03_prototype_analysis.ipynb) | Statistical analysis, findings, and product recommendations |
