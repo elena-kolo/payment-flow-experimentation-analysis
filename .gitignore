@@ -221,3 +221,6 @@ __marimo__/
 
 # Keep research data local
 /data/
+
+# Editable report source (PDF is published instead)
+reports/*.pptx
