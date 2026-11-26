@@ -45,13 +45,16 @@ Among the 43 Flow A respondents who reported noticing the future discount:
 | Correctly recalled the 1% discount | 18 | 41.86% |
 
 Only 5 of all 99 Flow A respondents (5.05%) both reported noticing the future discount and met both comprehension criteria.
+
 The responses also revealed specific misunderstandings. Among these 43 respondents, 18 (41.86%) selected the answer that the discount would be given by the website where the next deposit was made, while 15 (34.88%) selected that it would apply to any future payments.
 
 The offer needs clearer communication of the payment method, deadline, and discount amount.
 
 ### Stated willingness raised concerns about offer appeal
 
-Among the 164 respondents with prior experience of time-limited offers, 56.71% said they would make a special effort to pay within 7 days for this offer, compared with 67.07% who reported acting in time on a previous offer.
+The offer attracted broad interest in switching payment methods, but definite intent was less common. Across all 197 respondents, 75.13% said they would probably or definitely switch to the promoted payment method, while 28.93% said they would definitely switch.
+
+Willingness to make a special effort to meet the 7-day deadline was below the historical benchmark. Among the 164 respondents with prior experience of time-limited offers, 56.71% said they would make a special effort to pay within 7 days for this offer, compared with 67.07% who reported acting in time on a previous offer.
 
 Stated willingness was 10.37 percentage points lower than recalled past response among the same respondents (two-sided exact McNemar test, p = 0.0241).
 
@@ -71,8 +74,8 @@ Use Flow A as the basis for the next version, but make the existing offer terms 
 
 ## Next Steps
 
-1. Run a production A/B test comparing the current flow without a discount against revised Flow A with clearer offer terms
-2. Measure the impact on repeat use and assess whether the additional economic value justifies the total discount cost
+1. Run a production A/B test comparing the current flow without a discount against revised Flow A with clearer offer terms.
+2. Measure the impact on repeat use and assess whether the additional economic value justifies the total discount cost.
 
 ## Study Design and Data
 
@@ -109,48 +112,57 @@ The flows share the offer terms, UI copy, and typography.
 
 The initial hypothesis was that an explicit click would encourage more deliberate processing of the offer. The observed result went in the opposite direction. Habitual dismissal is one possible explanation. Fewer reminder exposures may also have contributed.
 
-*The comparison combines dismissal mechanics and reminder exposure. It does not isolate the effect of the button or establish why Flow B had lower noticeability.*
+## Analytical Steps
 
-## Analytical Approach
-
-1. Data audit and cleaning  
+1. **Data audit and cleaning.**
    Checked response quality, eligibility, and survey completion, then prepared the cleaned analytical sample.
 
-2. Sample balance assessment  
+2. **Sample balance assessment.**
    Compared participant characteristics and prototype completion across Flow A and Flow B.
 
-3. Primary comparison: future-discount noticeability  
+3. **Primary comparison: future-discount noticeability.**
    Compared Q18 responses across the full analytical sample: Flow A, n = 99, and Flow B, n = 98. Used a two-sided two-proportion z-test at α = 0.05, Wilson confidence intervals for group rates, and a Newcombe interval for the difference.
 
-4. Sensitivity analysis  
+4. **Sensitivity analysis.**
    Age and gender showed the largest observed differences between the flow samples during the balance assessment. Used logistic regression to check whether accounting for these characteristics materially changed the Q18 comparison. The adjusted result remained similar to the unadjusted result.
 
-5. Diagnostic analysis: current and joint noticeability  
-   Analyzed Q14 and Q18 across both flow samples to distinguish awareness of the immediate saving from awareness of the future incentive. This helped identify the remaining communication gap even in Flow A.
+5. **Diagnostic analysis: current and joint noticeability.**
+   Analyzed whether respondents noticed the applied discount (Q14) and the promised future discount (Q18) across both flow samples. Comparing the two showed that some respondents noticed the immediate saving without noticing the future incentive, which left a communication gap even in Flow A.
 
-6. Diagnostic analysis: comprehension  
-   Analyzed Q19–Q22 among the 43 Flow A respondents who reported noticing the future discount. Assessed discount recall and understanding of the payment-method and deadline requirements.
+6. **Diagnostic analysis: comprehension.**
+   Analyzed recall of the discount amount (Q19), understanding of the deadline (Q20–Q21), and understanding of the payment-method requirement (Q22) among the 43 Flow A respondents who reported noticing the future discount.
 
-7. Diagnostic analysis: offer appeal  
-   Analyzed Q28 and Q30 across the combined sample of 197 respondents. Compared Q30 with Q32 within the subgroup of 164 respondents with prior experience of time-limited offers, using a two-sided exact McNemar test.
+7. **Diagnostic analysis: offer appeal.**
+   Analyzed stated willingness to switch payment methods (Q28) and to make a special effort to deposit within 7 days (Q30) across the combined sample of 197 respondents. Compared Q30 with reported past behavior (Q32) within the subgroup of 164 respondents with prior experience of time-limited offers, using a two-sided exact McNemar test.
 
 Full question wording, variable definitions, and calculations are documented in the notebooks.
 
 ## Limitations
 
-- Prototype and survey outcomes: prompted noticeability, understanding, stated intentions, and recalled past behavior do not establish actual payment behavior or retention.
-- Sample scope: findings come from a quota-based research sample in one country, using English-language prototypes and survey questions. They should not be assumed to represent all production users.
-- Historical benchmark: previous offers were not standardized, and recalled behavior is not directly comparable with stated intention.
+**What the study cannot show**
+
+- Two things changed together. The comparison combines dismissal mechanics and reminder exposure, so it does not isolate the button's effect or explain Flow B's lower noticeability.
+- Survey outcomes, not behavior. Prompted noticeability, understanding, stated intent and recalled past behavior do not show actual payment behavior or retention.
+
+**Offer-appeal evidence**
+
+- Error in the savings example (Q25). The example implied a 6% discount instead of 1%. This may have inflated willingness answers (Q28, Q30), not noticeability or understanding, which were asked earlier. The effect cannot be quantified.
+- Past-offer benchmark. Previous offers may have had different rewards and conditions, and recalled behavior is not directly comparable with stated intent. Use it as context, not proof.
+
+**Precision and reach**
+
+- Limited precision for comprehension. Understanding was measured only among the 43 Flow A respondents who noticed the future discount, so results are descriptive and imprecise.
+- Sample scope. Online sample from the Netherlands with quotas for gender, age and deposit frequency, reflecting our product's user profile. Other characteristics were not controlled and materials were in English, so it may not represent all production users.
 
 ### Numerical error in Q25
 
 Q25 stated a 1% discount but showed €56.40 due on a €60 payment instead of €59.40. The example therefore implied a 6% discount—six times the stated amount.
 
-This example appeared after the noticeability and comprehension questions analyzed here (Q14–Q22), so it could not have influenced those earlier responses.
+**Not affected.** The example appeared after the noticeability and comprehension questions analyzed here (Q14–Q22), so it could not have influenced those responses. It also could not have changed Q32, which asks about the respondent's last past offer and serves as the historical benchmark.
 
-The later willingness questions referred to the 1% discount without repeating the euro example. However, the earlier example may have inflated expectations of the monetary saving.
+**Possibly affected.** The later willingness questions (Q28, Q30) referred to the 1% discount without repeating the euro example. However, the earlier example may have inflated expectations of the monetary saving.
 
-Limited willingness despite this potentially more generous framing strengthens concern about the appeal of the intended 1% offer.
+**How these questions are used.** The bias, if any, would push willingness upward. Limited willingness despite this potentially more generous framing therefore strengthens concern about the appeal of the intended 1% offer. The effect cannot be quantified. The reported percentages are therefore not adjusted for the error and should be read as possibly optimistic.
 
 *The study cannot establish how participants would have answered a corrected questionnaire or quantify the effect of this error on their responses.*
 
